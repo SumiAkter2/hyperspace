@@ -1,0 +1,42 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0a0a10;
+    color: #ffffff;
+}
+header{
+    height: 80px;
+   
+    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+}
+header nav, .header-left-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+   
+   
+}
+
+.brand-name{
+    font-size: 22px;
+}
+#subtitle{
+    color: red;
+    font-size: 14px;
+}
+header nav ul {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+   text-decoration: none;
+   padding: 10px;
+   font-weight: normal;
+   font-size: 16px;
+}
