@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background: #0a0a10;
     color: #ffffff;
+    font-family: sans-serif;
 }
 header{
     height: 80px;
@@ -70,5 +71,114 @@ font-size: 20px;
     border-radius: 6px;
     transition: 0.3s;
     background:linear-gradient(red,#FD8383);
+    
     cursor: pointer;
+}
+
+/* main content */
+.main-section{
+    display: flex;
+    padding-top:80px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h1{
+   font-size: 32px;
+   padding-bottom: 10px;
+}
+.collect2-btn{
+        border: 1px solid #84aeed;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 8px 10px;
+        border-radius: 6px;
+        transition: 0.3s;
+        background-color: #ffffff;
+        color: #000;
+}
+h3{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.left-content{
+    width: 50%;
+}
+.earn-point{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zero-btn{
+    border: 1px solid rgba(128, 128, 128, 0.78);
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 0.523);
+}
+.first-div{
+padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.585);
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1px solid #093228ed;
+    box-shadow: 0 3px 10px #093228ed;
+}
+.share-div  {
+    padding: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.585);
+    border-radius: 10px;
+    margin-top: 30px;
+    
+}
+.fa-brands{
+    background: transparent;
+    color: #000;
+    border: none;
+}
+.share-div:hover{
+border: 1px solid #093228ed;
+box-shadow: 0 3px 10px #093228ed;
+}
+.share-div h4{
+    font-size: 22px;
+}
+.share-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.share-div .share-heading p{
+    color: gray;
+    font-size: 14px;
+    font-weight: 700;
+   
+}
+.share-div p{
+    padding-top:10px ;
+    font-size: 12px;
+    line-height: 20px;
+}
+.share-div button{
+margin-right: 4px;
+}
+.sign-btn .fa-solid{
+    color: #000;
+    background: #ffffff;
+
+}
+.sign-btn{
+    color: #000;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.terms-text{
+    font-weight: 700;
+    margin-top: 20px;
+}
+.terms{
+    color: blue;
 }
