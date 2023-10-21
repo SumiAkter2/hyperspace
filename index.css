@@ -7,16 +7,15 @@
 }
 header{
     height: 80px;
-   
+   padding-left: 20px;
+   padding-right: 20px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.404);
 }
-header nav, .header-left-content{
+header nav, .header-left-content, .header-right-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
-   
-   
 }
 
 .brand-name{
@@ -33,10 +32,43 @@ header nav ul {
 }
 ul li{
     list-style: none;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 ul li a{
    text-decoration: none;
    padding: 10px;
    font-weight: normal;
    font-size: 16px;
+   word-spacing:5px;
+}
+.fa-solid{
+   
+    background: transparent;
+    font-size: 14px;
+}
+.header-right-content .fa-solid{
+color: #aeb0b7;
+font-size: 20px;
+}
+/* button */
+.collect-btn{
+   border: 1px solid rgba(128, 128, 128, 0.404);
+   padding: 10px;
+   border-radius: 6px;
+   transition: 0.3s;
+}
+.collect-btn:hover{
+    border: 1px solid #fff;
+    background: rgba(128, 128, 128, 0.739);
+    cursor: pointer;
+
+}
+.reward-btn{
+    border: 2px solid #fd8383;
+    padding: 6px;
+    border-radius: 6px;
+    transition: 0.3s;
+    background:linear-gradient(red,#FD8383);
+    cursor: pointer;
 }
