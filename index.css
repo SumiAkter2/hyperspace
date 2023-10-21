@@ -9,10 +9,10 @@ body{
     color: #ffffff;
 }
 header{
-    height: 80px;
+   height: 100px;
    padding-left: 20px;
    padding-right: 20px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+   border-bottom: 1px solid rgba(128, 128, 128, 0.404);
 }
 header nav, .header-left-content, .header-right-content{
     display: flex;
@@ -22,7 +22,12 @@ header nav, .header-left-content, .header-right-content{
 }
 
 .brand-name{
+    display: flex; justify-content: start; align-items: center;
     font-size: 22px;
+}
+.brand-name img{
+    width: 60px;
+   
 }
 #subtitle{
     color: red;
@@ -132,6 +137,15 @@ padding: 20px;
     border: 1px solid #093228ed;
     box-shadow: 0 3px 10px #093228ed;
 }
+.first-div h4 {
+    font-size: 20px;
+}
+.first-div p{
+padding-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
 .share-div  {
     padding: 20px;
     border: 1px solid rgba(128, 128, 128, 0.585);
@@ -144,12 +158,13 @@ padding: 20px;
     color: #000;
     border: none;
 }
+
 .share-div:hover{
 border: 1px solid #093228ed;
 box-shadow: 0 3px 10px #093228ed;
 }
 .share-div h4{
-    font-size: 22px;
+    font-size: 20px;
 }
 .share-heading{
     display: flex;
@@ -202,13 +217,16 @@ margin-right: 4px;
 .right-content-nav ul a{
     font-size: 16px;
     font-weight: 700;
-
+   
 }
 .right-content-nav ul a:hover , .right-content-nav ul a:active{
 border-bottom: 2px solid red;
 }
 .right-content p{
     margin-top: 30px;
+}
+#refer{
+border-bottom: 2px solid red;
 }
 .search{
     margin-top: 20px;
