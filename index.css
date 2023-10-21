@@ -78,10 +78,13 @@ font-size: 20px;
 /* main content */
 .main-section{
     display: flex;
+    justify-content: space-between;
+    align-items: start;
     padding-top:80px ;
     padding-left: 20px;
     padding-right: 20px;
 }
+/* left-content */
 h1{
    font-size: 32px;
    padding-bottom: 10px;
@@ -181,4 +184,102 @@ margin-right: 4px;
 }
 .terms{
     color: blue;
+}
+
+/* right-content */
+.right-content{
+    width: 40%;
+  
+}
+.right-content-nav ul{
+    display: flex;
+}
+.right-content-nav ul a{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.right-content-nav ul a:hover , .right-content-nav ul a:active{
+border-bottom: 2px solid red;
+}
+.right-content p{
+    margin-top: 30px;
+}
+.search{
+    margin-top: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.671);
+    background: rgba(128, 128, 128, 0.278);
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+/* table */
+.div-scroll,
+table {
+    
+    height: 500px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+table {
+   
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+table img{
+    width: 34px;
+    border-radius: 100%;
+}
+tr{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.296);
+    text-align: start;
+   
+}
+th{
+    text-align: start;
+    padding: 10px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    gap: 10px;
+}
+.user span{
+    color: #1DA1F2;
+}
+.fa-bolt{
+    background: red;
+    padding: 2px;
+    font-size: 10px;
+    border-radius: 100%;
+}
+.refer-btn{
+    border:1px solid #fc5757;
+    margin-left: 30px;
+    padding: 8px ;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.261);
+}
+tr td{
+    position: relative;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: transparent;
+    color: #fff;
+    text-align: start;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: -80px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
