@@ -158,6 +158,21 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
+.zero-progress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+::-webkit-progress-value{
+background-color: #04CB83;
+border-radius: 5px;
+}
+::-webkit-progress-bar {
+    background-color: #131621;
+    height: 4px;
+    width: 100px;
+    border-radius: 5px;
+}
 .zero-btn{
     border: 1px solid rgba(128, 128, 128, 0.78);
     padding: 5px;
@@ -326,10 +341,7 @@ th{
     background: rgba(128, 128, 128, 0.261);
 }
 
-.earn-div{
-    width: 0%;
-    display: none;
-}
+
 tr td{
     position: relative;
 }
@@ -490,6 +502,10 @@ margin-top: 10px;
         justify-content: space-between;
         align-items: center;
 }
+.earn-point{
+    display: grid;
+}
+
 .right-content{
     width: 100%;
     display: none;
