@@ -8,17 +8,32 @@
 body{
     color: #ffffff;
 }
-header{
+header nav{
+   /* position: fixed;
+   background: #000;
+   z-index: 100;
+   top: 0; */
    height: 100px;
    padding-left: 20px;
    padding-right: 20px;
-   border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+border-bottom: 1px solid rgba(128, 128, 128, 0.404);
 }
-header nav, .header-left-content, .header-right-content{
+header nav, .header-left-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   
+}
+.header-right-content{
+    background: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 12px;
+    /* position: fixed;
+    z-index: 100; */
+    margin-right: 10px;
+    right: 0;
+   
 }
 
 .brand-name{
@@ -86,10 +101,11 @@ color: #ffffff;
 
 /* main content */
 .main-section{
+    
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding-top:80px ;
+    padding-top:120px ;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -200,10 +216,12 @@ margin-right: 4px;
 }
 .terms-text{
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding-left: 20px;
 }
 .terms{
     color: blue;
+
 }
 
 /* right-content */
@@ -308,7 +326,7 @@ tr td{
     visibility: visible;
 }
 
-footer{
+.footer{
     border-top: 1px solid rgba(128, 128, 128, 0.306);
     margin-top: 50px;
     margin-bottom: 40px;
@@ -318,7 +336,7 @@ footer{
     justify-content: space-between;
     align-items: start;
 }
-footer p{
+.footer p{
     color: rgba(220, 220, 220, 0.662);
     padding-top: 14px;
    
@@ -329,7 +347,7 @@ footer p{
     font-size: 20px;
     color: rgba(220, 220, 220, 0.662);
 }
-footer nav{
+.footer nav{
 display: grid;
 text-align: start;
 }
@@ -362,4 +380,60 @@ margin-top: 10px;
 .term-privacy p{
   padding-right: 20px;
         
+}
+
+.topnav {
+    
+    overflow: hidden;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.306);
+    background-color: rgba(128, 128, 128, 0.261);
+    padding: 10px;
+}
+
+.topnav a {
+   
+   cursor: pointer;
+   color: #f2f2f2;
+   text-align: center;
+   text-decoration: none;
+   font-size: 17px;
+}
+
+
+
+
+@media only screen and (max-width: 560px){
+.nav-header{
+    display: none;
+}
+.main-section{
+    padding-top: 10px;
+    display: grid;
+}
+.left-content{
+    width: 100%;
+}
+.right-content{
+    width: 100%;
+}
+.copy-right-text{
+    display: none;
+}
+.footer{
+    display: grid;
+}
+ 
+
+
+.topnav {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ 
 }
